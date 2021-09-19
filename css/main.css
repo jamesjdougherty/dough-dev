@@ -1,0 +1,30 @@
+button {
+    position: absolute; 
+    right: 10px; 
+    top: 5px; 
+    margin: 10px;
+}
+
+html {
+    height: 100%; 
+    margin: 1em; 
+    background-color: khaki;
+}
+
+body {
+    background-color: khaki;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-size: medium;
+}
+
+@media (min-width: 770px) {
+    html {
+        background-color: lightgray;
+    }
+
+    body {
+        background-color: lightgray;
+    }
+
+}
