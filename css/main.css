@@ -1,25 +1,24 @@
-button {
-    position: absolute; 
-    right: 10px; 
-    top: 5px; 
-    margin: 10px;
-}
-
 html {
-    height: 100%; 
     margin: 1em;
-    background-color: lightgray;
+    background-color: lightslategray;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: medium;
-    background-color: lightgray;
+    background-color: lightslategray;
 }
 
 h5 {
     text-decoration: underline;
+}
+
+button {
+    position: absolute; 
+    right: 10px; 
+    top: 5px; 
+    margin: 10px;
 }
 
 .card {
@@ -28,13 +27,14 @@ h5 {
     border: solid 1px black;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 800px) {
     html {
-        background-color: lightslategray;
+        background-color: lightgray;
     }
 
     body {
-        background-color: lightslategray;
+        background-color: lightgray;
+        font-size: x-large;
     }
 
     .card {
