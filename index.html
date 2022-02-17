@@ -19,18 +19,25 @@
 
   <div class="card" id="post">
     <h3>API Calls using Vue.js - February 16, 2022</h3>
-    <p>{{ info }}</p>
+    <p>It worked! {{ info }}</p>
     <p>
-      It worked! The above "Blog post returned" text is coming back from a get request that I
-      set up on a new api using axios. Laptop battery is low ... will finish this post up when
-      I get some charge.
+      The above "Blog post returned" text is coming back from a GET request that I set up on a new api using axios.
+      I have never used axios before prior to playing around with Vue.js, but so far it has been very easy to implement.
+      The GET request is being mounted onto Vue data() using axios and receiving the response using a promise.
+    </p>
+    <p>
+      I also decided to spin up a new postgres db that will be used to store these blog posts using the new management api
+      that I created to post and get data for Dough Dev Details. Next steps will be to create some test data that I will query
+      through the DoughDevService and return to the blog. After that has been completed, I will implement that "Create" button using
+      Vue to pop a modal and send a POST request to that api to save into postgres.
     </p>
   </div>
   <div class="card">
     <h3>Algorithms - February 14, 2022</h3>
     <p>
       Second post of the day alert! Today was a good day of balance and productivity. Time with family, time at work,
-      time to code, time to workout, time for Valentine's Day dinner from our favorite Chinese restaurant, and additional
+      time to code, time to workout, time for Valentine's Day dinner from our favorite Chinese restaurant, and
+      additional
       time to code and watch Netflix with the Project Manager
       (this is my nickname for my wife, she keeps me on track most of the time &#128514;).
     </p>
@@ -152,7 +159,7 @@
         info: null
       }
     },
-    mounted () {
+    mounted() {
       axios
         .get('https://dough-management.herokuapp.com/api/doughdev/findBlog')
         .then(response => (this.info = response.data))
