@@ -4,6 +4,7 @@
 <head>
   <title>Dough Dev Details</title>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -16,6 +17,15 @@
 
   <h1 class="comp-title">DOUGH Dev Details</h1>
 
+  <div class="card" id="post">
+    <h3>API Calls using Vue.js</h3>
+    <p>{{ info }}</p>
+    <p>
+      It worked! The above "Blog post returned" text is coming back from a get request that I
+      set up on a new api using axios. Laptop battery is low ... will finish this post up when
+      I get some charge.
+    </p>
+  </div>
   <div class="card">
     <h3>Algorithms - February 14, 2022</h3>
     <p>
@@ -131,6 +141,21 @@
     el: '#app',
     data: {
       message: '~ a Dough Design creation ~'
+    }
+  })
+</script>
+<script>
+  var blogPost = new Vue({
+    el: '#post',
+    data() {
+      return {
+        info: null
+      }
+    },
+    mounted () {
+      axios
+        .get('https://dough-management.herokuapp.com/api/doughdev/findBlog')
+        .then(response => (this.info = response.data))
     }
   })
 </script>

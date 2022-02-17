@@ -9,6 +9,7 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.26.0",
     "serve": "^13.0.2"
   }
 }
