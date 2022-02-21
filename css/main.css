@@ -6,7 +6,7 @@ html {
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
-    font-size: medium;
+    font-size: x-large;
     background-color: lightslategray;
 }
 
@@ -27,7 +27,7 @@ button {
     border: solid 1px black;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
     html {
         background-color: lightgray;
     }
