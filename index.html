@@ -1,227 +1,262 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Dough Dev Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-  <title>Dough Dev Details</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <meta charset="UTF-8">
-</head>
+  <body class="container-fluid">
+    <div id="app" style="padding: 5px">{{ message }}</div>
 
-<body class="container-fluid">
-  <div id="app" style="padding: 5px;">
-    {{ message }}
-  </div>
+    <h1 class="comp-title">DOUGH Dev Details</h1>
 
-  <h1 class="comp-title">DOUGH Dev Details</h1>
+    <div class="card">
+      <h3>i3 + Tmux - April 3, 2022</h3>
+      <p>
+        i3 and Tmux ... this combo did not last long for me. At first I really
+        enjoyed the window manager i3, but shortly I discovered that it was more
+        trouble than it was worth for my use case.
+      </p>
+      <p>
+        What you will learn about me in this blog is that I love to try and test
+        out new tech, but I will not shy away from admitting when something does
+        not work for me or if it is sub-par to my standards. I would not say
+        that i3 is a bad product, it just does not fall into my flow. I like to
+        work off a very large monitor 99% of the time when coding or writing. i3
+        out of the box seems like it is better for someone working from their
+        laptop or a smaller monitor. The reason I call this out is because I
+        could not get the resolution to work properly with Ubuntu + i3 without
+        doing some serious Googling and trouble shooting with my Dell Gaming
+        monitor. I used to have time to really dig into things that do not
+        matter, but ever since having a bebé ... time is of the essence. I like
+        things to be quick, easy, and reliable. This does not mean throwing
+        quality out the window! When I am building a product, I put these 4
+        values into everything I create.
+      </p>
+      <p>
+        Tmux on the other-hand is my new favorite Terminal add-on ... plugin ...
+        whatever you want to call it. I use tmux for both personal and work
+        computing now. It allows me to have multiple sessions running in the
+        terminal (one for grep, one for workspace, another for scripts or a
+        different workspace, etc). Love the product and will continue to use for
+        the forseeable future.
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>i3 + Tmux - April 3, 2022</h3>
-    <p>
-      Still need to finish the last two blog posts, but wanted to get a placeholder here for the new window manager
-      I have been using with a terminal tool called tmux. Testing auto deploy.
-    </p>
-  </div>
+    <div class="card">
+      <h3>Vim Or Bust - March 31, 2022</h3>
+      <p>
+        According to Google, Vim (text editor) was first released in November of
+        1991. A 30 year old text editor! You may ask yourself, why on earth are
+        you writing about this?! Great question! I actually hated Vim when I
+        first became an engineer. I thought, why the hell would you use this?!
+        Also, how the hell do you write to a file?!?!
+      </p>
+      <p>
+        Sorry, got taken away there for a second. Anyway ... I finally did
+        figure out how to write to a file and so so much more!
+      </p>
+      <p>
+        Vim at the beginning is a bit cumbersome and clunky. It takes a lot of
+        practice to get good, but once you figure it out and get that muscle
+        memory down, it can totally be a GameChanger. After a few years of using
+        Vim plugins for IDE's, I recently leveled up by discovering vim-plug for
+        your .vimrc file. I think my first plugin was a fuzzy finder, then an
+        LSP, and then a color scheme lol. &#128516;
+      </p>
+      <p>
+        Very excited to see where this new discovery will take me over the next
+        year. Currently, only using the Vim flow for front-end development
+        (using it right now). Have not found a great workflow for Java
+        development yet, but might try using the eclim plugin which is from what
+        I understand like running a headless version of the Eclipse IDE
+        underneath the Vim text editor. We shall see!
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>Vim Or Bust - March 31, 2022</h3>
-    <p>
-      According to Google, Vim (text editor) was first released in November of 1991. A 30 year old text editor!
-      You may ask yourself, why on earth are you writing about this?! Great question! I actually hated Vim when 
-      I first became an engineer. I thought, why the hell would you use this?! Also, how the hell do you write to
-      a file?!?!
-    </p>
-    <p>
-      Sorry, got taken away there for a second. Anyway ... I finally did figure out how to write to a file and
-      so so much more!
-    </p>
-    <p>
-      Vim at the beginning is a bit cumbersome and clunky. It takes a lot of practice to get good, but once
-      you figure it out and get that muscle memory down, it can totally be a GameChanger. After a few years of
-      using Vim plugins for IDE's, I recently leveled up by discovering vim-plug for your .vimrc file. I think
-      my first plugin was a fuzzy finder, then an LSP, and then a color scheme lol. &#128516;
-    </p>
-    <p>
-      Very excited to see where this new discovery will take me over the next year. Currently, only using the
-      Vim flow for front-end development (using it right now). Have not found a great workflow for Java development
-      yet, but might try using the eclim plugin which is from what I understand like running a headless version
-      of the Eclipse IDE underneath the Vim text editor. We shall see!
-    </p>
-  </div>
+    <div class="card">
+      <h3>Java Jdbc Template and PostgreSQL - February 25, 2022</h3>
+      <p>
+        Lots to discuss since my last post. I have added a new repository into
+        the Dough Management API that will be in charge of all things Postgres.
+        The PostgresBlogRepository is currently implementing an interface with
+        two functions on it (findBlog and saveBlog) ...
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>Java Jdbc Template and PostgreSQL - February 25, 2022</h3>
-    <p>
-      Lots to discuss since my last post. I have added a new repository into the Dough Management API that
-      will be in charge of all things Postgres. The PostgresBlogRepository is currently implementing an
-      interface with two functions on it (findBlog and saveBlog) ... 
-    </p>
-  </div>
+    <div class="card">
+      <h3>Organizing Scripts in Vue - February 21, 2022</h3>
+      <p>
+        Good morning, Dev world. Recently, I have been thinking about how to
+        organize my Vue.js scripts within my dough-dev project. I started
+        playing around with Vue 3 and liked it, but it felt more like a Angular
+        application where you create components and organize everything like an
+        application instead of a HTML page.
+      </p>
+      <p>
+        With that being said, I have made the decision to stick with Vue 2 and
+        keep this blog very simple and not turn it into an application until
+        necessary.
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>Organizing Scripts in Vue - February 21, 2022</h3>
-    <p>
-      Good morning, Dev world. Recently, I have been thinking about how to organize my Vue.js scripts within my dough-dev
-      project. I started playing around with Vue 3 and liked it, but it felt more like a Angular application where you
-      create components and organize everything like an application instead of a HTML page.
-    </p>
-    <p>
-      With that being said, I have made the decision to stick with Vue 2 and keep this blog very simple and not turn it into
-      an application until necessary.
-    </p>
-  </div>
+    <div class="card" id="post">
+      <h3>API Calls using Vue.js - February 16, 2022</h3>
+      <p>It worked! {{ info }}</p>
+      <p>
+        The above "{{ info }}" text is coming back from a GET request that I set
+        up on a new api using axios. I have never used axios before prior to
+        playing around with Vue.js, but so far it has been very easy to
+        implement. The GET request is being mounted onto Vue data() using axios
+        and receiving the response using a promise.
+      </p>
+      <p>
+        I also decided to spin up a new postgres db that will be used to store
+        these blog posts using the new management api that I created to post and
+        get data for Dough Dev Details. Next steps will be to create some test
+        data that I will query through the DoughDevService and return to the
+        blog. After that has been completed, I will implement that "Create"
+        button using Vue to pop a modal and send a POST request to that api to
+        save into postgres.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Algorithms - February 14, 2022</h3>
+      <p>
+        Second post of the day alert! Today was a good day of balance and
+        productivity. Time with family, time at work, time to code, time to
+        workout, time for Valentine's Day dinner from our favorite Chinese
+        restaurant, and additional time to code and watch Netflix with the
+        Project Manager (this is my nickname for my wife, she keeps me on track
+        most of the time &#128514;).
+      </p>
+      <p>
+        Tonight, I have been working on a quicksort algorithm written in Java. I
+        do this occasionally when I want to dust off a language that I plan on
+        using in the future or when I want to focus my mind on solving problems
+        step by step in small chunks. In tonight's code both cases were true.
+      </p>
+    </div>
 
-  <div class="card" id="post">
-    <h3>API Calls using Vue.js - February 16, 2022</h3>
-    <p>It worked! {{ info }}</p>
-    <p>
-      The above "{{ info }}" text is coming back from a GET request that I set up on a new api using axios.
-      I have never used axios before prior to playing around with Vue.js, but so far it has been very easy to implement.
-      The GET request is being mounted onto Vue data() using axios and receiving the response using a promise.
-    </p>
-    <p>
-      I also decided to spin up a new postgres db that will be used to store these blog posts using the new management api
-      that I created to post and get data for Dough Dev Details. Next steps will be to create some test data that I will query
-      through the DoughDevService and return to the blog. After that has been completed, I will implement that "Create" button using
-      Vue to pop a modal and send a POST request to that api to save into postgres.
-    </p>
-  </div>
-  <div class="card">
-    <h3>Algorithms - February 14, 2022</h3>
-    <p>
-      Second post of the day alert! Today was a good day of balance and productivity. Time with family, time at work,
-      time to code, time to workout, time for Valentine's Day dinner from our favorite Chinese restaurant, and
-      additional
-      time to code and watch Netflix with the Project Manager
-      (this is my nickname for my wife, she keeps me on track most of the time &#128514;).
-    </p>
-    <p>
-      Tonight, I have been working on a quicksort algorithm written in Java. I do this occasionally when I want to dust
-      off
-      a language that I plan on using in the future or when I want to focus my mind on solving problems step by step in
-      small
-      chunks. In tonight's code both cases were true.
-    </p>
-  </div>
+    <div class="card">
+      <h3>Back at it! - February 14, 2022</h3>
+      <p>
+        Greetings, Dough Dev world! I am back at it again with new updates and a
+        new year to try and keep some consistency going with side dev projects.
+        I think it is probably too lofty a goal to try and commit once a day for
+        100 days or whatever that Insta challenge is that bootcampers do these
+        days, but I do think at least 2-3 posts a week could be very doable and
+        see how that will grow or change over time.
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>Back at it! - February 14, 2022</h3>
-    <p>
-      Greetings, Dough Dev world! I am back at it again with new updates and a new year to try and keep some consistency
-      going with side dev projects. I think it is probably too lofty a goal to try and commit once a day for 100 days or
-      whatever
-      that Insta challenge is that bootcampers do these days, but I do think at least 2-3 posts a week could be very
-      doable and see how that will grow or change over time.
-    </p>
-  </div>
+    <div class="card">
+      <h3>The Plan - September 19, 2021</h3>
+      <p>
+        I have been thinking about what to do with this blog for quite some time
+        now, and I've decided my main objective will be to document my
+        development goals, struggles, and accomplishments for the forseeable
+        future. FYI - I have not installed a spellcheck for vscode yet, so
+        apologies for any typo errors.
+      </p>
+      <p>
+        For my first little project (you could refer to it as a story if you are
+        an Agile fan) I am going to be implementing a "Post" button using Vue.js
+        to pop a modal, allow a user (me for now) to type an entry, then save it
+        to a postgresql database through a NodeJS api that I built. A follow up
+        story will then be to select the blog entry from the db and display it
+        on a card.
+      </p>
+      <p>
+        As I am doing these stories/projects, I will also be playing around with
+        the design of this site (trying to master mobile first design). I think
+        it will be cool to start very vanilla using little css to launch this
+        blog and watch it change over time.
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>The Plan - September 19, 2021</h3>
-    <p>
-      I have been thinking about what to do with this blog for quite some time now, and I've decided my main
-      objective will be to document my development goals, struggles, and accomplishments for the forseeable future.
-      FYI - I have not installed a spellcheck for vscode yet, so apologies for any typo errors.
-    </p>
-    <p>
-      For my first little project (you could refer to it as a story if you are an Agile fan) I am going to be
-      implementing
-      a "Post" button using Vue.js to pop a modal, allow a user (me for now) to type an entry, then save it to a
-      postgresql
-      database through a NodeJS api that I built. A follow up story will then be to select the blog entry from the db
-      and
-      display it on a card.
-    </p>
-    <p>
-      As I am doing these stories/projects, I will also be playing around with the design of this site (trying to master
-      mobile first design). I think it will be cool to start very vanilla using little css to launch this blog and watch
-      it change over time.
-    </p>
-  </div>
+    <div class="card">
+      <h3>Blog Resurrection - September 18, 2021</h3>
+      <p>
+        Bringing my blog back to life to document what is going on in my dev
+        life, as I work full time as a Software Engineer for a popular Sporting
+        Goods retailer in the United States; as well as, experiment/research new
+        tech at night or on my weekends. Currently, playing around with Vue.js
+        as I build out the Dev Details page to compare a lighter weight library
+        compared to Angular (my choice for building out web apps).
+      </p>
+    </div>
 
-  <div class="card">
-    <h3>Blog Resurrection - September 18, 2021</h3>
-    <p>
-      Bringing my blog back to life to document what is going on in my dev life, as I work full time as a Software
-      Engineer for a popular Sporting Goods retailer in the United States; as well as, experiment/research new tech
-      at night or on my weekends. Currently, playing around with Vue.js as I build out the Dev Details page to compare
-      a lighter weight library compared to Angular (my choice for building out web apps).
-    </p>
-  </div>
+    <div class="card">
+      <h3>Schedule: Makers VS Managers - April 7, 2018</h3>
+      <p>
+        The art of a person's schedule. The well known calendar invite. Some
+        (let's refer to this group as "Managers") live by this tool and cannot
+        function properly without checking it every morning to plan the upcoming
+        day. However, for others (let's refer to these people as "Makers") see
+        this tool as more of a creative killer, a buzzkill, a wet blanket (I
+        think you get my point) that just becomes a part of life that you learn
+        to live with because society deems it "normal".
+      </p>
+      <p>
+        Growing up in a very "Always show up 5 minutes early" type environment,
+        it was definitely instilled in me at a very young age that it is rude to
+        show up late for an appointment/meeting/commitment. Humans as a whole,
+        respect the value of time and do our best to manage it, control it, and
+        try to optimize it throughout our lives. The issue that I have run into
+        with this type of mindset is that creation/creativity does not live on a
+        timed schedule. Now, of course there are ways to set aside time for
+        creative thoughts and process; however, when you get "real" with
+        yourself, sometimes creativity just strikes during your morning shower,
+        or in the middle of a meeting, or maybe right before you fall asleep. My
+        initial instinct when this little beam of brilliance hits me is to write
+        it down, sketch it up, or code that motha until the cows come home.
+      </p>
+      <p>
+        Unfortunately, herein lies the issue ... I cannot just get up and leave
+        a meeting to go indulge on a little creative snack. I find if my entire
+        day is following a "Managers" schedule that very little creative work
+        gets done that day. Usually what occurs is a lot of planning, and
+        discussing, and perhaps some problem generation gets done, but usually
+        very little out of the box thinking occurs. On the flip side, if I block
+        out maybe the first four hours of my morning, just to hold from being
+        scooped up by the meeting troll ... then more times than not, something
+        cool and new is generated or brought into existence to play a role
+        (maybe) in this wonderful world called Design.
+      </p>
+    </div>
+  </body>
 
-  <div class="card">
-    <h3>Schedule: Makers VS Managers - April 7, 2018</h3>
-    <p>
-      The art of a person's schedule. The well known calendar invite. Some (let's refer to this group as
-      "Managers")
-      live by this tool
-      and cannot function properly without checking it every morning to plan the upcoming day. However, for others
-      (let's refer to these
-      people as "Makers") see this tool as more of a creative killer, a buzzkill, a wet blanket (I think you get
-      my
-      point) that just becomes
-      a part of life that you learn to live with because society deems it "normal".
-    </p>
-    <p>
-      Growing up in a very "Always show up 5 minutes early" type environment, it was definitely instilled in me at
-      a
-      very young age that
-      it is rude to show up late for an appointment/meeting/commitment. Humans as a whole, respect the value of
-      time
-      and do our best to manage it,
-      control it, and try to optimize it throughout our lives. The issue that I have run into with this type of
-      mindset is that creation/creativity
-      does not live on a timed schedule. Now, of course there are ways to set aside time for creative thoughts and
-      process; however, when you get "real"
-      with yourself, sometimes creativity just strikes during your morning shower, or in the middle of a meeting,
-      or
-      maybe right before you fall asleep. My initial
-      instinct when this little beam of brilliance hits me is to write it down, sketch it up, or code that motha
-      until
-      the cows come home.
-    </p>
-    <p>
-      Unfortunately, herein lies the issue ... I cannot just get up and leave a meeting to go indulge on a little
-      creative snack. I
-      find if my entire day is following a
-      "Managers" schedule that very little creative work gets done that day. Usually what occurs is a lot of
-      planning,
-      and discussing, and perhaps some problem
-      generation gets done, but usually very little out of the box thinking occurs. On the flip side, if I block
-      out
-      maybe the first four hours of my morning,
-      just to hold from being scooped up by the meeting troll ... then more times than not, something cool and new
-      is
-      generated or brought into existence to play a role (maybe)
-      in this wonderful world called Design.
-    </p>
-  </div>
-</body>
-
-<script>
-  var app = new Vue({
-    el: '#app',
-    data: {
-      message: '~ a Dough Design creation ~'
-    }
-  })
-</script>
-<script>
-  var blogPost = new Vue({
-    el: '#post',
-    data() {
-      return {
-        info: null
-      }
-    },
-    mounted() {
-      axios
-        .get('https://dough-management.herokuapp.com/api/doughdev/findBlog')
-        .then(response => (this.info = response.data))
-    }
-  })
-</script>
-
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        message: "~ a Dough Design creation ~",
+      },
+    });
+  </script>
+  <script>
+    var blogPost = new Vue({
+      el: "#post",
+      data() {
+        return {
+          info: null,
+        };
+      },
+      mounted() {
+        axios
+          .get("https://dough-management.herokuapp.com/api/doughdev/findBlog")
+          .then((response) => (this.info = response.data));
+      },
+    });
+  </script>
 </html>
