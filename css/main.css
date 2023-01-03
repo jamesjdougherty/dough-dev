@@ -1,17 +1,22 @@
 html {
     margin: 1em;
-    background-color: lightslategray;
+    background-color: #355E3B;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: x-large;
-    background-color: lightslategray;
+    background-color: #355E3B;
+}
+
+h1 {
+    color: white;
 }
 
 h3 {
     text-decoration: underline;
+    color: slategrey;
 }
 
 button {
@@ -21,25 +26,33 @@ button {
     margin: 10px;
 }
 
+#app {
+    color: white;
+}
+
 .card {
     margin: 1em;
     padding: 1em;
     border: solid 1px black;
+    background-color: #E2DBAC;
+    color: #966F33;
 }
 
 @media (min-width: 1024px) {
     html {
-        background-color: lightgray;
+        background-color: #355E3B;
     }
 
     body {
-        background-color: lightgray;
+        background-color: #355E3B;
         font-size: x-large;
     }
 
     .card {
         margin: 1em;
         padding: 1em;
+        background-color: #E2DBAC;
+        color: #966F33;
     }
 
 }
