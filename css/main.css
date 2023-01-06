@@ -1,13 +1,13 @@
 html {
     margin: 1em;
-    background-color: #355E3B;
+    background-color: #3A424A;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
     font-size: x-large;
-    background-color: #355E3B;
+    background-color: #3A424A;
 }
 
 h1 {
@@ -40,11 +40,11 @@ button {
 
 @media (min-width: 1024px) {
     html {
-        background-color: #355E3B;
+        background-color: #3A424A;
     }
 
     body {
-        background-color: #355E3B;
+        background-color: #3A424A;
         font-size: x-large;
     }
 
